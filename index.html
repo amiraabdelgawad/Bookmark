@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <title>Bookmark</title>
+        <meta name="viewport" content="width=device-width; initial-scale=1.0" />
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+
+        <header id="bookmark" class="py-5">
+            <div class="container d-flex justify-content-center align-items-center  h-100">
+                <div class="bookmark-content text-center w-50">
+                    <div class="heading mb-5">
+                        <h1>Bookmarker</h1>
+                        <h2>Bookmark your favorite sites</h2>
+                    </div>
+                    
+
+                    <div class="form-group">
+                        <label class="text-white">Site Name</label> <span class="text-danger"> * </span>
+                        <input type="text" id="bookmark-name" class="form-control" placeholder="&#xf02e; &nbsp; Bookmark Name" style="font-family: FontAwesome"/>
+                        <div id="bookmarkNameAlert" class="alert alert-danger d-none">
+                            BookmarkName must start with capital letter, contains 4:10 characters
+                        </div>
+                    </div>
+                    
+                    <div class="form-group ">
+                        <label class="text-white">Site URL</label> <span class="text-danger"> * </span>
+                        <input type="text" id="bookmark-url" class="form-control" placeholder="&#xf08d; &nbsp; Bookmark URL" style="font-family: FontAwesome"/>
+                        <div id="bookmarkURLAlert" class="alert alert-danger d-none">
+                            Bookmark URL must start with: (www.), then any char and ends with (.com, .org or .net)
+                        </div>
+                    </div>
+
+                    <p id="empty-input-alert" class="text-danger"></p>
+                    <button id="mainBtn" class="btn myBtn" >Add Bookmark</button>
+
+                </div>
+            </div>
+        </header>
+
+        <section id="BookmarkTable" class="position-relative">
+            <div id="downBtn" class="down-to d-flex justify-content-center align-items-center">
+                <a href="#BookmarkTable"><i class="fas fa-chevron-down text-white fs-18"></i></a>
+            </div>
+
+            <div class="container py-5 ">
+                <div class="form-group mt-3 mb-5 w-75 m-auto">
+                    <input type="text" id="search-input" class="form-control" placeholder="&#xf002; &nbsp; Search" style="font-family: FontAwesome"/>
+                </div>
+
+                <div id="view" >
+
+                </div>
+            </div>
+            
+        </section>
+
+
+
+        <button id="btnUp"class="btn myBtn rounded-circle p-2">
+            <a href="#bookmark" class="text-white"><i class="fas fa-chevron-up"></i></a>
+        </button>
+
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,82 @@
+body{
+    font-family: "Akkurat-Light",Helvetica,Arial,"Lucida Grande",sans-serif;
+}
+#bookmark{
+    background-color: #1a1c28;
+    background-image: url(../images/ll.png);
+    background-position: revert;
+    background-repeat: no-repeat;
+    background-size: 15%;
+    height: 90vh;
+}
+.bookmark-content h1{
+    color: #5da2d5;
+    font-weight: 600;
+    font-size: 55px;
+}
+.bookmark-content h2{
+    color: #5da2d5;
+    font-size: 35px;
+}
+.form-group{
+    margin-bottom: 1rem;
+    text-align: left;
+}
+.myBtn{
+    background-color: #f2c558;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+.myBtn:hover{
+    color: #fff;
+    background-color: #e3b953;
+}
+.down-to{
+    position: absolute;
+    background: #f2c558;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+.down-to:hover{
+    background-color: #e3b953;
+}
+#btnUp{
+    position: fixed;
+    right: 12px;
+    bottom: 12px;
+    z-index: 99999;
+    background-color: #f2c558;
+}
+.bookmark-data{
+    padding: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+.styling{
+    color: #797474;
+    font-size: 28px;
+}
+#edit{
+    background-color: #5da2d5;
+    border-color: #5da2d5;
+    transition: all 0.3s ease-in-out;
+}
+#edit:hover{
+    background-color: #4789b9;
+}
+.bg-pink{
+    background-color: #f78888;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+
+}
+.bg-pink:hover{
+    background-color: #df8282;
+    color: #fff;
+}
